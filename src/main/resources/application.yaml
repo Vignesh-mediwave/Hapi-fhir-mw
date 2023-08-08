@@ -14,9 +14,9 @@ spring:
     check-location: false
     baselineOnMigrate: true
   datasource:
-    url: 'jdbc:postgresql://southerprodpsql.postgres.database.azure.com:5432/southern-fhirdatabase'
-    username: 'southerprodpsql@southerprodpsql'
-    password: 'eSrpcVnsouthernvXaJDn79a'
+    url: 'jdbc:postgresql://commondbserversu.postgres.database.azure.com:5432/fhirdb'
+    username: 'commondbserversu'
+    password: 'HrDkSzfveF5&rJ*P'
     driverClassName: org.postgresql.Driver
 jpa:
   properties:
