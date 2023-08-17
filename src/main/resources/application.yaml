@@ -15,8 +15,8 @@ spring:
     baselineOnMigrate: true
   datasource:
     url: 'jdbc:postgresql://salford-neurology-proddb.postgres.database.azure.com:5432/salfordneuprodfhir'
-    username: 'salfordneuprodfhir'
-    password: 'BSDTyra4twfd@$%32'
+    username: 'salfordneurologyproddb'
+    password: '3$7gqtWgd9!L'
     driverClassName: org.postgresql.Driver
 jpa:
   properties:
