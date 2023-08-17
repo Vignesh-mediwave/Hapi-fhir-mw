@@ -14,9 +14,9 @@ spring:
     check-location: false
     baselineOnMigrate: true
   datasource:
-    url: 'jdbc:postgresql://commondbserversu.postgres.database.azure.com:5432/fhirdb'
-    username: 'commondbserversu'
-    password: 'HrDkSzfveF5&rJ*P'
+    url: 'jdbc:postgresql://salford-neurology-proddb.postgres.database.azure.com:5432/salfordneuprodfhir'
+    username: 'salfordneurologyproddb'
+    password: 'BSDTyra4twfd@$%32'
     driverClassName: org.postgresql.Driver
 jpa:
   properties:
