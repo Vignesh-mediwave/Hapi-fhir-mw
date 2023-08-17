@@ -37,8 +37,8 @@ ENV ALLOW_EMPTY_PASSWORD=yes
 
 ########### distroless brings focus on security and runs on plain spring boot - this is the default image
 FROM gcr.io/distroless/java17-debian11:nonroot as default
-# 65532 is the nonroot user's uid
-# used here instead of the name to allow Kubernetes to easily detect that the container
+# 65532 is the nonroot user's -Djdk.lang.Process.launchMechanism=vfork
+# used here instead of the name to allow Kubernete-Djdk.lang.Process.launchMechanism=vforks to easily detect that the container
 # is running as a non-root (uid != 0) user.
 USER 65532:65532
 WORKDIR /app
