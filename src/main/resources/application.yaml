@@ -14,14 +14,21 @@ spring:
     check-location: false
     baselineOnMigrate: true
   datasource:
-    url: 'jdbc:postgresql://southernlivepsql.postgres.database.azure.com:5432/southern-fhirdatabase'
-    username: 'southernlive'
-    password: 'kE1&#r00RecreS'
+    url: 'jdbc:postgresql://commonstagingpsql.postgres.database.azure.com:5432/southern-staging-uat-fhir'
+    username: 'stagingadmin'
+    password: '7g16\@tC&WM2'
     driverClassName: org.postgresql.Driver
+# jpa:
+#   properties:
+#     hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgres94Dialect
+#     hibernate.search.enabled: false
+
 jpa:
   properties:
-    hibernate.dialect: ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgres94Dialect
-    hibernate.search.enabled: false
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL94Dialect
+    database:
+      platform: org.hibernate.dialect.PostgreSQL94Dialect
 
 hapi:
   fhir:
